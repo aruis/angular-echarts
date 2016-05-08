@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS-echarts</title>
+    <style>
+        .echarts {
+            width: 500px;
+            height: 400px;
+        }
+    </style>
+    <!--<script src="//cdn.bootcss.com/angular.js/1.4.7/angular.min.js"></script>-->
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/echarts/dist/echarts.min.js"></script>
+    <script src="angular-echarts.js"></script>
+    <script>
+        angular.module("app", ['angular-echarts-aruis'])
+                .controller('mainCtrl', function ($scope) {
+                    $scope.data = [
+                        {name: 'a', value: 10},
+                        {name: 'b', value: 16},
+                        {name: 'c', value: 13},
+                        {name: 'd', value: 19},
+                        {name: 'e', value: 12},
+                        {name: 'f', value: 13},
+                    ]
+                })
+    </script>
+
+</head>
+<body ng-controller="mainCtrl">
+<div class="echarts"
+     echarts="line" echarts-title="湿度历史" echarts-label="湿度" echarts-data="data" echarts-x="name" echarts-y="value"></div>
+
+
+</body>
+</html>

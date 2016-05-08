@@ -1,0 +1,21 @@
+{
+  "name": "angular-echarts",
+  "authors": [
+    "aruis <lovearuis@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "echarts": "^3.1.7",
+    "angular": "angularjs#^1.5.5"
+  }
+}
